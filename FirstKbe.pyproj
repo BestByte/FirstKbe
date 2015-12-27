@@ -64,6 +64,9 @@
     <Compile Include="scripts\base\Account.py" />
     <Compile Include="scripts\base\kbengine.py" />
     <Compile Include="scripts\bots\kbengine.py" />
+    <Compile Include="scripts\cell\Account.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="scripts\cell\kbengine.py" />
     <Compile Include="scripts\common\Functor.py" />
     <Compile Include="scripts\common\KBEDebug.py" />
