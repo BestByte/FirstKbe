@@ -20,6 +20,58 @@
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
     <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="res\" />
+    <Folder Include="res\server\" />
+    <Folder Include="res\spaces\" />
+    <Folder Include="scripts\" />
+    <Folder Include="scripts\base\" />
+    <Folder Include="scripts\bots\" />
+    <Folder Include="scripts\cell\" />
+    <Folder Include="scripts\common\" />
+    <Folder Include="scripts\data\" />
+    <Folder Include="scripts\db\" />
+    <Folder Include="scripts\entity_defs\" />
+    <Folder Include="scripts\entity_defs\interfaces\" />
+    <Folder Include="scripts\interface\" />
+    <Folder Include="scripts\login\" />
+    <Folder Include="scripts\server_common\" />
+    <Folder Include="scripts\user_type\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="guiconsole.bat" />
+    <Content Include="kill_server.bat" />
+    <Content Include="kill_server.sh" />
+    <Content Include="README.md" />
+    <Content Include="res\server\kbengine.xml" />
+    <Content Include="res\spaces\.gitignore" />
+    <Content Include="safe_kill.bat" />
+    <Content Include="safe_kill.sh" />
+    <Content Include="scripts\data\.gitignore" />
+    <Content Include="scripts\entities.xml" />
+    <Content Include="scripts\entity_defs\Account.def" />
+    <Content Include="scripts\entity_defs\alias.xml" />
+    <Content Include="scripts\entity_defs\interfaces\.gitignore" />
+    <Content Include="scripts\server_common\.gitignore" />
+    <Content Include="scripts\user_type\.gitignore" />
+    <Content Include="start_bots.bat" />
+    <Content Include="start_bots.sh" />
+    <Content Include="start_server.bat" />
+    <Content Include="start_server.sh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="scripts\base\Account.py" />
+    <Compile Include="scripts\base\kbengine.py" />
+    <Compile Include="scripts\bots\kbengine.py" />
+    <Compile Include="scripts\cell\kbengine.py" />
+    <Compile Include="scripts\common\Functor.py" />
+    <Compile Include="scripts\common\KBEDebug.py" />
+    <Compile Include="scripts\db\kbengine.py" />
+    <Compile Include="scripts\interface\kbengine.py" />
+    <Compile Include="scripts\interface\Poller.py" />
+    <Compile Include="scripts\login\kbengine.py" />
+  </ItemGroup>
   <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
 </Project>
